@@ -92,22 +92,3 @@ new Accordion('.guests-category', {
 	activeClass: 'guests--active',
 	duration: 200,
 });
-
-// Табы
-let guestsLink = document.querySelectorAll('.guests-category__link');
-let guestsCards = document.querySelectorAll('.guests__cards');
-
-guestsLink.forEach(function (element) {
-	element.addEventListener('click', function (el) {
-		const path = el.currentTarget.dataset.path;
-		guestsLink.forEach(function (e) {
-			e.classList.remove('guests-category__link--active')
-		});
-		el.currentTarget.classList.add('guests-category__link--active');
-		guestsCards.forEach(function (w) {
-			w.classList.remove('guests__cards--active')
-		});
-		document.querySelector(`[data-target="${path}"]`).classList.add('guests__cards--active');
-	});
-});
-

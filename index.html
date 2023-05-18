@@ -2017,17 +2017,788 @@
 		</section>
 
 		<!-- PLAYLISTS section -->
-		<section id="playlists" class="playlists section-padding"></section>
+		<section id="playlists" class="playlists section-padding">
+			<div class="playlists__container container">
+				<h2 class="playlists__title font-title text-reset">
+					Плейлисты
+				</h2>
+				<div class="playlists__wraper flex">
+					<div class="playlists__genres playlists-genres">
+						<h3 class="playlists-genres__title font-descr text-reset">
+							Жанр
+						</h3>
+						<ul class="playlists-genres__list list-reset flex" aria-label="Список кнопок выбора жанра" data-simplebar>
+							<li class="playlists-genres__item">
+								<label class="playlists-genres__label flex" tabindex="0">
+									<input type="radio" name="genres" id="postpunk" checked class="playlists-genres__input">
+									<span class="playlists-genres__icon" role="radio" aria-checked="true"></span>
+									<span class="playlists-genres__text font-text">
+										Постпанк
+									</span>
+								</label>
+							</li>
+							<li class="playlists-genres__item">
+								<label class="playlists-genres__label flex" tabindex="0">
+									<input type="radio" name="genres" id="hardcore" class="playlists-genres__input">
+									<span class="playlists-genres__icon" role="radio" aria-checked="true"></span>
+									<span class="playlists-genres__text font-text">
+										Хардкор
+									</span>
+								</label>
+							</li>
+							<li class="playlists-genres__item">
+								<label class="playlists-genres__label flex" tabindex="0">
+									<input type="radio" name="genres" id="punkrock" class="playlists-genres__input">
+									<span class="playlists-genres__icon" role="radio" aria-checked="true"></span>
+									<span class="playlists-genres__text font-text">
+										Панк-рок
+									</span>
+								</label>
+							</li>
+							<li class="playlists-genres__item">
+								<label class="playlists-genres__label flex" tabindex="0">
+									<input type="radio" name="genres" id="rock" class="playlists-genres__input">
+									<span class="playlists-genres__icon" role="radio" aria-checked="true"></span>
+									<span class="playlists-genres__text font-text">
+										Рок
+									</span>
+								</label>
+							</li>
+							<li class="playlists-genres__item">
+								<label class="playlists-genres__label flex" tabindex="0">
+									<input type="radio" name="genres" id="progressiverock" class="playlists-genres__input">
+									<span class="playlists-genres__icon" role="radio" aria-checked="true"></span>
+									<span class="playlists-genres__text font-text">
+										Прогрессивный рок
+									</span>
+								</label>
+							</li>
+							<li class="playlists-genres__item">
+								<label class="playlists-genres__label flex" tabindex="0">
+									<input type="radio" name="genres" id="electronicmusic" class="playlists-genres__input">
+									<span class="playlists-genres__icon" role="radio" aria-checked="true"></span>
+									<span class="playlists-genres__text font-text">
+										Электронная музыка
+									</span>
+								</label>
+							</li>
+							<li class="playlists-genres__item">
+								<label class="playlists-genres__label flex" tabindex="0">
+									<input type="radio" name="genres" id="classicalmusic" class="playlists-genres__input">
+									<span class="playlists-genres__icon" role="radio" aria-checked="true"></span>
+									<span class="playlists-genres__text font-text">
+										Классическая музыка
+									</span>
+								</label>
+							</li>
+							<li class="playlists-genres__item">
+								<label class="playlists-genres__label flex" tabindex="0">
+									<input type="radio" name="genres" id="sounds" class="playlists-genres__input">
+									<span class="playlists-genres__icon" role="radio" aria-checked="true"></span>
+									<span class="playlists-genres__text font-text">
+										Звуки природы и&nbsp;шум города
+									</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<ul class="playlists__cards playlists-cards list-reset flex">
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E" />
+										</svg>
+									</div>
+									<img src="img/playlists1.jpg" alt="Картинка1" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Ploho
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										3&nbsp;последних альбома
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E" />
+										</svg>
+									</div>
+									<img src="img/playlists2.jpg" alt="Картинка2" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Molchat Doma
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Все песни
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E" />
+										</svg>
+									</div>
+									<img src="img/playlists3.jpg" alt="Картинка3" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Motorama
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Все синглы
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E" />
+										</svg>
+									</div>
+									<img src="img/playlists4.jpg" alt="Картинка4" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Human Tetris
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										3&nbsp;последних альбома
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E" />
+										</svg>
+									</div>
+									<img src="img/playlists5.jpg" alt="Картинка5" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Буерак
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Все&nbsp;EP
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E" />
+										</svg>
+									</div>
+									<img src="img/playlists6.jpg" alt="Картинка6" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Июльские Дни
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Альбом &laquo;Колокол&raquo;
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_24531_3902)">
+												<path d="M-4 0H19.8217V12H-4V0Z" fill="#0039A6" />
+												<path
+													d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z"
+													fill="white" />
+												<path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z"
+													fill="white" />
+												<path
+													d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z"
+													fill="#D52B1E" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="16" height="12" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<img src="img/playlists7.jpg" alt="Картинка7" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Joy Division
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Лучшее за&nbsp;всё время
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_24531_3902)">
+												<path d="M-4 0H19.8217V12H-4V0Z" fill="#0039A6" />
+												<path
+													d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z"
+													fill="white" />
+												<path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z"
+													fill="white" />
+												<path
+													d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z"
+													fill="#D52B1E" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="16" height="12" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<img src="img/playlists8.jpg" alt="Картинка8" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										The Cure
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Лучшее за&nbsp;всё время
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_24531_3902)">
+												<path d="M-4 0H19.8217V12H-4V0Z" fill="#0039A6" />
+												<path
+													d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z"
+													fill="white" />
+												<path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z"
+													fill="white" />
+												<path
+													d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z"
+													fill="#D52B1E" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="16" height="12" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<img src="img/playlists9.jpg" alt="Картинка9" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										The Smiths
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Период 1984&ndash;1988
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_24531_3902)">
+												<path d="M-4 0H19.8217V12H-4V0Z" fill="#0039A6" />
+												<path
+													d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z"
+													fill="white" />
+												<path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z"
+													fill="white" />
+												<path
+													d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z"
+													fill="#D52B1E" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="16" height="12" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<img src="img/playlists10.jpg" alt="Картинка10" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										New Order
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Хиты
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_24531_3902)">
+												<path d="M-4 0H19.8217V12H-4V0Z" fill="#0039A6" />
+												<path
+													d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z"
+													fill="white" />
+												<path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z"
+													fill="white" />
+												<path
+													d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z"
+													fill="#D52B1E" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="16" height="12" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<img src="img/playlists11.jpg" alt="Картинка11" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Bauhaus
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										Все синглы
+									</p>
+								</div>
+							</article>
+						</li>
+						<li class="playlists-cards__item">
+							<article class="playlists-cards__card flex" tabindex="0">
+								<div class="playlists-cards__img">
+									<div class="playlists-cards__country">
+										<svg class="playlists-cards__flag" width="16" height="12" viewBox="0 0 16 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_24531_3902)">
+												<path d="M-4 0H19.8217V12H-4V0Z" fill="#0039A6" />
+												<path
+													d="M-4 0V1.34063L17.158 12H19.8217V10.6594L-1.33635 0H-4ZM19.8217 0V1.34063L-1.33635 12H-4V10.6594L17.158 0H19.8217Z"
+													fill="white" />
+												<path d="M5.92646 0V12H9.89519V0H5.92646ZM-4 4.00078V7.99922H19.8217V4.00078H-4Z"
+													fill="white" />
+												<path
+													d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z"
+													fill="#D52B1E" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="16" height="12" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div>
+									<img src="img/playlists12.jpg" alt="Картинка12" class="playlists-cards__foto">
+									<button class="playlists-cards__btn btn-reset hidden" aria-label="Кнопка play">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="21" fill="#6D31EE" />
+											<path
+												d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+								<div class="playlists-cards__text flex">
+									<h4 class="playlists-cards__title font-descr text-reset">
+										Gang Of&nbsp;Four
+									</h4>
+									<p class="playlists-cards__descr font-small text-reset">
+										3&nbsp;последних альбома
+									</p>
+								</div>
+							</article>
+						</li>
+					</ul>
+					<div class="playlists__note">
+						<p class="playlists__descr font-descr text-reset">
+							Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних
+						</p>
+						<small class="playlists__copy font-descr">
+							&copy;&nbsp;2021&nbsp;l W-Wave
+						</small>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- MARKET section -->
-		<section id="market" class="market section-padding"></section>
+		<section id="market" class="market section-padding">
+			<div class="market__container container flex">
+				<div class="market__img">
+					<img src="img/market-picture.png" alt="Картинка" class="market__picture">
+					<svg class="market__icon" width="160" height="160" viewBox="0 0 160 160" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M151.975 89.6127C156.622 84.0465 156.622 75.9535 151.975 70.3873L146.225 63.4986C143.682 60.4529 142.45 56.5239 142.797 52.5716L143.592 43.5358C144.244 36.1224 139.362 29.3519 132.122 27.629L124.848 25.8981C120.783 24.9308 117.306 22.3119 115.254 18.6722L111.455 11.933C107.645 5.17474 99.3097 2.43713 92.2345 5.62002L86.1539 8.35543C82.2402 10.116 77.7598 10.116 73.8461 8.35543L67.7488 5.61247C60.6805 2.43274 52.3537 5.1615 48.5383 11.9079L44.7596 18.5893C42.6991 22.2327 39.21 24.8495 35.1354 25.8073L27.918 27.5038C20.6595 29.21 15.7563 35.9887 16.4078 43.4165L17.2057 52.5128C17.5514 56.4548 16.3255 60.3737 13.7949 63.4159L7.99347 70.3904C3.36298 75.9571 3.37009 84.037 8.01036 89.5956L13.7767 96.503C16.3185 99.5478 17.5509 103.475 17.2043 107.426L16.4046 116.543C15.7545 123.955 20.6362 130.724 27.8748 132.446L35.1634 134.181C39.2214 135.147 42.6941 137.758 44.7475 141.389L48.5209 148.061C52.3436 154.821 60.6929 157.545 67.7664 154.341L73.8322 151.594C77.7536 149.818 82.249 149.812 86.1749 151.578L92.2513 154.311C99.3195 157.491 107.646 154.762 111.462 148.016L115.252 141.313C117.306 137.682 120.779 135.07 124.837 134.105L132.122 132.371C139.362 130.648 144.244 123.878 143.592 116.464L142.797 107.428C142.45 103.476 143.682 99.5471 146.225 96.5014L151.975 89.6127Z"
+							fill="#F0D288" />
+						<path
+							d="M55.9564 118.705L41.1423 100.411L44.3404 97.8209L46.0538 99.9368C45.9765 97.1772 47.0482 94.8982 49.2691 93.0998C51.6381 91.1814 54.0782 90.5922 56.5895 91.3322C58.1331 91.7852 59.8093 93.1285 61.6179 95.362L70.792 106.691L67.5939 109.281L58.4912 98.0399C57.2775 96.5411 56.0919 95.6522 54.9343 95.3731C53.5393 95.043 52.1755 95.4174 50.843 96.4965C49.4809 97.5995 48.7808 98.945 48.7428 100.533C48.6874 102.281 49.5759 104.286 51.4083 106.549L59.1545 116.115L55.9564 118.705Z"
+							fill="#292E39" />
+						<path
+							d="M85.5394 84.6034L89.3825 83.8999C89.7125 85.579 89.7547 87.175 89.5088 88.6878C89.0347 91.5534 87.5983 93.9574 85.1997 95.8997C82.7124 97.9139 79.923 98.8589 76.8316 98.7347C73.746 98.5571 70.9181 96.8814 68.3479 93.7075C66.0871 90.9157 65.0185 87.9613 65.1421 84.8444C65.2715 81.6741 66.6983 78.9859 69.4226 76.7798C72.5022 74.286 75.7311 73.5203 79.1091 74.4829C81.7807 75.2391 84.2144 77.0637 86.4101 79.9569L72.0632 91.5748C73.5921 93.4023 75.3832 94.4335 77.4365 94.6684C79.4899 94.9033 81.3309 94.3613 82.9596 93.0425C84.4105 91.8675 85.3121 90.4076 85.6642 88.6627C85.9222 87.2859 85.8806 85.9328 85.5394 84.6034ZM70.1435 88.7501L80.9814 79.9737C79.5488 78.7495 77.984 78.1189 76.2871 78.082C74.596 77.9916 73.0693 78.498 71.7072 79.601C70.3747 80.6801 69.559 82.0948 69.2604 83.8451C68.9675 85.542 69.2619 87.177 70.1435 88.7501Z"
+							fill="#292E39" />
+						<path
+							d="M80.7261 68.3563L84.2795 65.4788L99.8094 73.4857L94.3749 54.9681L111.314 64.1698L106.755 47.2786L110.308 44.4011L117.008 71.383L100.256 62.3216L105.637 80.591L80.7261 68.3563Z"
+							fill="#292E39" />
+					</svg>
+				</div>
+				<div class="market__contant flex">
+					<h2 class="market__title font-title text-reset">
+						Будь с&nbsp;нами на&nbsp;одной волне!
+					</h2>
+
+					<div class="market__text font-descr">
+						<p class="market__descr text-reset">
+							Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только
+							начали свой
+							путь радиовещателей, нам хочется, чтобы вы&nbsp;могли как следует нас расслышать:)
+						</p>
+						<p class="market__descr text-reset">
+							Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей,
+							ручная сборка,
+							качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно
+							трудимся над новыми
+							партиями и&nbsp;дизайном. Спешите приобрести!
+						</p>
+					</div>
+					<p class="market__price text-reset">
+						2&nbsp;800&nbsp;₽
+					</p>
+
+					<button href="https://market.yandex.ru" class="market__link market-link btn-icon flex" role="button"
+						target="_blank">
+						<svg class="market-link__img" width="21" height="20" viewBox="0 0 21 20" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_69674_968)">
+								<path class="market-link__svg1"
+									d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z"
+									fill="#F0D288" />
+								<path class="market-link__svg2"
+									d="M17.4383 4.54391L13.7294 3.17676L8.39558 10.8637L8.92665 7.3751L6.02046 5.68219L0.673828 12.1141C0.924147 13.3858 1.41008 14.5718 2.08375 15.6239L5.27361 11.7711L4.09981 16.2962L7.73695 17.6271L13.1407 9.8464L11.9568 14.2958L14.9032 16.0179L20.5579 10.3174C20.5591 10.2534 20.5598 10.1889 20.5598 10.1246C20.5598 8.78258 20.3016 7.50132 19.8328 6.32896L16.548 9.6538L17.4383 4.54391Z"
+									fill="#121723" />
+							</g>
+							<defs>
+								<clipPath id="clip0_69674_968">
+									<rect x="0.5" width="20" height="20" rx="10" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						<span class="market-link__text font-text">
+							Купить на&nbsp;Яндекс.Маркет
+						</span>
+					</button>
+				</div>
+			</div>
+		</section>
 
 		<!-- ABOUT section -->
-		<section id="about" class="about section-padding"></section>
+		<section id="about" class="about section-padding">
+			<div class="about__container container">
+				<div class="about__top">
+					<h2 class="about__title font-title text-reset">
+						О&nbsp;нас
+					</h2>
+					<h3 class="about__subtitle font-text text-reset">
+						Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!
+					</h3>
+					<p class="about__descr font-text text-reset">
+						Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому
+						вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём!
+						Это можно
+						сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо!
+						Услышимся!:)
+					</p>
+				</div>
+				<div class="swiper about__swiper">
+					<div class="swiper-wrapper about__list about-cards">
+						<div class="about-cards__item swiper-slide">
+							<article class="about-cards__card">
+								<div class="about-cards__img">
+									<picture class="about-cards__picture">
+										<source class="about-cards__foto" srcset="img/aboutDmitryGutenberg320.jpg"
+											media="(max-width: 576px)">
+										<source class="about-cards__foto" srcset="img/aboutDmitryGutenberg.jpg" media="(max-width: 992px)">
+										<source class="about-cards__foto" srcset="img/aboutDmitryGutenberg1024.jpg"
+											media="(max-width: 1200px)">
+										<img src="img/aboutDmitryGutenberg.jpg" alt="Дмитрий Гутенберг" class="about-cards__foto">
+									</picture>
+								</div>
+								<div class="about-cards__text">
+									<h4 class="about-cards__title font-text text-reset">
+										Дмитрий Гутенберг
+									</h4>
+									<p class="about-cards__descr font-descr text-reset">
+										Эксперт (ну, почти) по&nbsp;всем вопросам (почти)
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="about-cards__item swiper-slide">
+							<article class="about-cards__card">
+								<div class="about-cards__img">
+									<picture class="about-cards__picture">
+										<source class="about-cards__foto" srcset="img/aboutAnnaVasilyeva320.jpg" media="(max-width: 576px)">
+										<source class="about-cards__foto" srcset="img/aboutAnnaVasilyeva.jpg" media="(max-width: 992px)">
+										<source class="about-cards__foto" srcset="img/aboutAnnaVasilyeva1024.jpg"
+											media="(max-width: 1200px)">
+										<img src="img/aboutAnnaVasilyeva.jpg" alt="Анна Васильева" class="about-cards__foto">
+									</picture>
+								</div>
+								<div class="about-cards__text">
+									<h4 class="about-cards__title font-text text-reset">
+										Анна Васильева
+									</h4>
+									<p class="about-cards__descr font-descr text-reset">
+										Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="about-cards__item swiper-slide">
+							<article class="about-cards__card">
+								<div class="about-cards__img">
+									<picture class="about-cards__picture">
+										<source class="about-cards__foto" srcset="img/aboutPyotrDmitrievsky.jpg" media="(max-width: 992px)">
+										<source class="about-cards__foto" srcset="img/aboutPyotrDmitrievsky1024.jpg"
+											media="(max-width: 1200px)">
+										<img src="img/aboutPyotrDmitrievsky.jpg" alt="Пётр Дмитриевский" class="about-cards__foto">
+									</picture>
+								</div>
+								<div class="about-cards__text">
+									<h4 class="about-cards__title font-text text-reset">
+										Пётр Дмитриевский
+									</h4>
+									<p class="about-cards__descr font-descr text-reset">
+										Господа! Внимание! Благодарю за&nbsp;внимание!
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="about-cards__item swiper-slide">
+							<article class="about-cards__card">
+								<div class="about-cards__img">
+									<picture class="about-cards__picture">
+										<source class="about-cards__foto" srcset="img/aboutTatianaFleganova320.jpg"
+											media="(max-width: 576px)">
+										<source class="about-cards__foto" srcset="img/aboutTatianaFleganova.jpg" media="(max-width: 992px)">
+										<source class="about-cards__foto" srcset="img/aboutTatianaFleganova1024.jpg"
+											media="(max-width: 1200px)">
+										<img src="img/aboutTatianaFleganova.jpg" alt="Татьяна Флеганова" class="about-cards__foto">
+									</picture>
+								</div>
+								<div class="about-cards__text">
+									<h4 class="about-cards__title font-text text-reset">
+										Татьяна Флеганова
+									</h4>
+									<p class="about-cards__descr font-descr text-reset">
+										Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="about-cards__item swiper-slide">
+							<article class="about-cards__card">
+								<div class="about-cards__img">
+									<picture class="about-cards__picture">
+										<source class="about-cards__foto" srcset="img/aboutFedorProkopiev320.jpg"
+											media="(max-width: 576px)">
+										<source class="about-cards__foto" srcset="img/aboutFedorProkopiev.jpg" media="(max-width: 992px)">
+										<source class="about-cards__foto" srcset="img/aboutFedorProkopiev1024.jpg"
+											media="(max-width: 1200px)">
+										<img src="img/aboutFedorProkopiev.jpg" alt="Фёдор Прокопьев" class="about-cards__foto">
+									</picture>
+								</div>
+								<div class="about-cards__text">
+									<h4 class="about-cards__title font-text text-reset">
+										Фёдор Прокопьев
+									</h4>
+									<p class="about-cards__descr font-descr text-reset">
+										Привет! Я&nbsp;фотограф, музыкант, ведущий
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="about-cards__item swiper-slide">
+							<article class="about-cards__card">
+								<div class="about-cards__img">
+									<picture class="about-cards__picture">
+										<source class="about-cards__foto" srcset="img/aboutSvetlanaKortneva320.jpg"
+											media="(max-width: 576px)">
+										<source class="about-cards__foto" srcset="img/aboutSvetlanaKortneva.jpg" media="(max-width: 992px)">
+										<source class="about-cards__foto" srcset="img/aboutSvetlanaKortneva1024.jpg"
+											media="(max-width: 1200px)">
+										<img src="img/aboutSvetlanaKortneva.jpg" alt="Светлана Кортнева" class="about-cards__foto">
+									</picture>
+								</div>
+								<div class="about-cards__text">
+									<h4 class="about-cards__title font-text text-reset">
+										Светлана Кортнева
+									</h4>
+									<p class="about-cards__descr font-descr text-reset">
+										Художник-оформитель. Оформляю
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-navigation">
+					<button id="swiperPrev" class="swiper-navigation__btn swiper-navigation__prev btn-reset"></button>
+					<button id="swiperNext" class="swiper-navigation__btn swiper-navigation__next btn-reset"></button>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<!-- FOOTER section -->
-	<footer class="footer flex"></footer>
+	<footer class="footer flex">
+
+	</footer>
 
 	<!-- Connecting scripts -->
 	<script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
