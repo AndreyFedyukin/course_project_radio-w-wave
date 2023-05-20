@@ -437,10 +437,9 @@ input[type="search"]::-webkit-search-results-decoration {
   color: var(--color-btn-primarymagenta);
 }
 
-/* -------- -------- -------- */
+/* !-------- MODAL window -------- */
 .modal {
   position: fixed;
-  display: none;
   top: 0;
   bottom: 0;
   left: 0;
@@ -448,23 +447,20 @@ input[type="search"]::-webkit-search-results-decoration {
   background: rgba(0, 0, 0, 0.5);
   z-index: 50;
   overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s, visibility 0.4s;
 }
 
-.stop-scroll-modal {
-  overflow: hidden;
-}
-
-.modal--active {
-  display: block;
-}
-
-.modal__container {
+.modal__box {
   position: relative;
-  margin: 0 auto;
-  margin-top: 80px;
   padding: 60px;
   max-width: 824px;
   background: #121723;
+  margin: 0 auto;
+  margin-top: 80px;
+  transform: scale(0);
+  transition: transform 0.8s;
 }
 
 .modal__btn-closed {
@@ -487,6 +483,15 @@ input[type="search"]::-webkit-search-results-decoration {
 .modal__btn-closed path,
 .modal__btn-closed circle {
   stroke: currentColor;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.open .modal__box {
+  transform: scale(1);
 }
 
 .modal__title {
@@ -792,7 +797,7 @@ input[type="search"]::-webkit-search-results-decoration {
   fill: var(--color-btn-primarymagenta);
 }
 
-/* -------- -------- -------- */
+/* !-------- MODAL window -------- */
 .modal__btn:focus-visible {
   outline: 2px solid var(--color-btn-primarymagenta);
   outline-offset: -2px;
@@ -2828,7 +2833,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .about__input {
-  padding: 10px 10px 10px 32px;
+  padding: 10px 10px 10px 30px;
   border-radius: 40px;
 }
 
@@ -2837,7 +2842,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .about__item:not(:first-child) {
-  width: 48.2%;
+  width: 48.38%;
   min-height: 70px;
 }
 
@@ -2861,8 +2866,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .about__btn {
-  padding: 23px 53px;
-  margin-bottom: 33px;
+  padding: 24px 52px;
+  margin-bottom: 30px;
   border: 2px solid var(--color-btn-purple);
   -webkit-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
@@ -3236,11 +3241,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .footer__item:nth-last-child(n + 4) {
-  margin-right: 24.7%;
+  margin-right: 24.3%;
 }
 
 .footer__item:not(:nth-child(3n)) {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .footer__link {

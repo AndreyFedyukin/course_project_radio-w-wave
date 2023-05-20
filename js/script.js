@@ -1,4 +1,4 @@
-// -------- Header form
+// !-------- Header form --------
 let btnOpen = document.querySelector('.header-form-search__btn-open');
 let form = document.querySelector('.header-form-search__form');
 
@@ -16,7 +16,7 @@ document.addEventListener('click', function (a) {
   };
 });
 
-// -------- Burger
+// !-------- Burger --------
 let burger = document.querySelector('.burger');
 let nav = document.querySelector('.header__nav');
 let nav__link = document.querySelectorAll('.nav__link');
@@ -61,7 +61,7 @@ pluse.addEventListener('click', function () {
   header__bottom.classList.toggle('header__bottom--active');
 });
 
-// -------- Podcasts show on button
+// !-------- Podcasts show --------
 let podcastsMore = document.querySelector('.podcasts__more');
 let btnMore = document.querySelector('.podcasts__btn-more');
 let podcasts = document.querySelectorAll('.podcasts__item');
@@ -84,7 +84,7 @@ let choices = new Choices(element, {
   searchEnabled: false,
 });
 
-// -------- Accordion
+// !-------- Accordion --------
 new Accordion('.guests-category', {
   elementClass: 'guests-category__item',
   triggerClass: 'guests-category__top',
@@ -111,7 +111,34 @@ guestsLink.forEach(function (element) {
   });
 });
 
-// -------- Modal form
+// !-------- Modal --------
+// Открыть модальное окно
+document.getElementById("open-modal-btn").addEventListener("click", function () {
+  document.getElementById("my-modal").classList.add("open")
+})
+
+// Закрыть модальное окно
+document.getElementById("close-my-modal-btn").addEventListener("click", function () {
+  document.getElementById("my-modal").classList.remove("open")
+})
+
+// Закрыть модальное окно при нажатии на Esc
+window.addEventListener('keydown', (e) => {
+  if (e.key === "Escape") {
+    document.getElementById("my-modal").classList.remove("open")
+  }
+});
+
+// Закрыть модальное окно при клике вне его
+document.querySelector("#my-modal .modal__box").addEventListener('click', event => {
+  event._isClickWithInModal = true;
+});
+document.getElementById("my-modal").addEventListener('click', event => {
+  if (event._isClickWithInModal) return;
+  event.currentTarget.classList.remove('open');
+});
+
+// !-------- Modal form --------
 const validates = new window.JustValidate('.modal__form', {
   colorWrong: '#D52B1E',
   rules: {
@@ -136,29 +163,14 @@ const validates = new window.JustValidate('.modal__form', {
   },
 });
 
-// -------- Modal
-let modalInput = document.querySelector('.header-form-private__btn');
-let modal = document.querySelector('.modal');
-let modalClosed = document.querySelector('.modal__btn-closed');
-
-modalInput.addEventListener('click', function () {
-  modal.classList.toggle('modal--active');
-  document.body.classList.toggle('stop-scroll-modal');
-});
-
-modalClosed.addEventListener('click', function () {
-  modal.classList.remove('modal--active');
-  document.body.classList.remove('stop-scroll-modal');
-});
-
-// -------- Playlists scroll
+// !-------- Playlists scroll --------
 dropdown = document.querySelector('.playlists-genres__list')
 new SimpleBar(dropdown, {
   autoHide: false,
   scrollbarMaxSize: 50,
 });
 
-// -------- About slider
+// !-------- About slider --------
 let swiper = new Swiper('.about__swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
@@ -204,7 +216,7 @@ swiperNext.addEventListener('click', function () {
   swiper.slideNext();
 });
 
-// -------- About forms
+// !-------- About forms --------
 const validate = new window.JustValidate('.about__form', {
   colorWrong: '#D52B1E',
   rules: {
