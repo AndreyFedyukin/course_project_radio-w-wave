@@ -485,6 +485,22 @@ input[type="search"]::-webkit-search-results-decoration {
   stroke: currentColor;
 }
 
+.modal__btn-closed:focus {
+  outline: none;
+}
+
+.modal__btn-closed:focus-visible {
+  color: var(--color-btn-lightpurple);
+}
+
+.modal__btn-closed:hover {
+  color: var(--color-btn-purple);
+}
+
+.modal__btn-closed:active {
+  color: var(--color-btn-primarymagenta);
+}
+
 .modal.open {
   visibility: visible;
   opacity: 1;
@@ -512,6 +528,30 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+
+.modal__register-link:focus {
+  outline: none;
+}
+
+.modal__register-link:focus-visible {
+  color: var(--color-white);
+}
+
+.modal__register-link:focus-visible::after {
+  background: var(--color-btn-lightpurple);
+}
+
+.modal__register-link:hover {
+  color: var(--color-btn-lightpurple);
+}
+
+.modal__register-link:hover::after {
+  background: none;
+}
+
+.modal__register-link:active {
+  color: var(--color-btn-primarymagenta);
 }
 
 .modal__register-link::after {
@@ -542,6 +582,24 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.modal__input:focus {
+  outline: none;
+}
+
+.modal__input:focus-visible {
+  background: var(--color-text-lightblack);
+  border: 1px solid var(--color-btn-lightpurple);
+}
+
+.modal__input:hover {
+  background: var(--color-text-lightblack);
+  border: 1px solid var(--color-white);
+}
+
+.modal__input:active {
+  background: var(--color-text-black);
 }
 
 .modal__input::-webkit-input-placeholder {
@@ -594,6 +652,22 @@ input[type="search"]::-webkit-search-results-decoration {
     outline-offset 0.3s ease-in-out;
 }
 
+.modal__btn:focus-visible {
+  outline: 2px solid var(--color-btn-primarymagenta);
+  outline-offset: -2px;
+  background: var(--color-btn-lightpurple);
+}
+
+.modal__btn:hover {
+  outline: none;
+  background: var(--color-btn-lightpurple);
+}
+
+.modal__btn:active {
+  outline: none;
+  background: var(--color-btn-primarymagenta);
+}
+
 .modal__help {
   padding-top: var(--gap);
   margin-bottom: var(--gap);
@@ -632,6 +706,22 @@ input[type="search"]::-webkit-search-results-decoration {
 .modal-social__link-vk rect,
 .modal-social__link-google rect {
   fill: currentColor;
+}
+
+.modal-social__link:focus {
+  outline: none;
+}
+
+.modal-social__link:focus-visible {
+  color: var(--color-btn-lightpurple);
+}
+
+.modal-social__link:hover {
+  color: var(--color-btn-purple);
+}
+
+.modal-social__link:active {
+  color: var(--color-btn-primarymagenta);
 }
 
 .modal__item {
@@ -795,97 +885,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .live__btn-play:active path {
   fill: var(--color-btn-primarymagenta);
-}
-
-/* !-------- MODAL window -------- */
-.modal__btn:focus-visible {
-  outline: 2px solid var(--color-btn-primarymagenta);
-  outline-offset: -2px;
-  background: var(--color-btn-lightpurple);
-}
-
-.modal__btn:hover {
-  outline: none;
-  background: var(--color-btn-lightpurple);
-}
-
-.modal__btn:active {
-  outline: none;
-  background: var(--color-btn-primarymagenta);
-}
-
-.modal__register-link:focus {
-  outline: none;
-}
-
-.modal__register-link:focus-visible {
-  color: var(--color-white);
-}
-
-.modal__register-link:focus-visible::after {
-  background: var(--color-btn-lightpurple);
-}
-
-.modal__register-link:hover {
-  color: var(--color-btn-lightpurple);
-}
-
-.modal__register-link:hover::after {
-  background: none;
-}
-
-.modal__register-link:active {
-  color: var(--color-btn-primarymagenta);
-}
-
-.modal-social__link:focus {
-  outline: none;
-}
-
-.modal-social__link:focus-visible {
-  color: var(--color-btn-lightpurple);
-}
-
-.modal-social__link:hover {
-  color: var(--color-btn-purple);
-}
-
-.modal-social__link:active {
-  color: var(--color-btn-primarymagenta);
-}
-
-.modal__btn-closed:focus {
-  outline: none;
-}
-
-.modal__btn-closed:focus-visible {
-  color: var(--color-btn-lightpurple);
-}
-
-.modal__btn-closed:hover {
-  color: var(--color-btn-purple);
-}
-
-.modal__btn-closed:active {
-  color: var(--color-btn-primarymagenta);
-}
-
-.modal__input:focus {
-  outline: none;
-}
-
-.modal__input:focus-visible {
-  background: var(--color-text-lightblack);
-  border: 1px solid var(--color-btn-lightpurple);
-}
-
-.modal__input:hover {
-  background: var(--color-text-lightblack);
-  border: 1px solid var(--color-white);
-}
-
-.modal__input:active {
-  background: var(--color-text-black);
 }
 
 /* !-------- HERO section -------- */
