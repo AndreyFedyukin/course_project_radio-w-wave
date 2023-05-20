@@ -1,8 +1,8 @@
-<!-- ![Ссылка на изображение] -->
+![Ссылка на изображение](https://andreyfedyukin.github.io/Course_project_Radio-W-Wave/img/logo.png)
 
 # Курсовой проект "Радио "W-Wave". /Skillbox/
 
-Ссылка на сайт
+Ссылка на сайт https://andreyfedyukin.github.io/Course_project_Radio-W-Wave/
 
 ---
 
