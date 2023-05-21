@@ -111,7 +111,7 @@ guestsLink.forEach(function (element) {
   });
 });
 
-// !-------- Modal --------
+// !-------- Modal -------- according to the method of A.Dudukalo
 // Открыть модальное окно
 document.getElementById("open-modal-btn").addEventListener("click", function () {
   document.getElementById("my-modal").classList.add("open")
