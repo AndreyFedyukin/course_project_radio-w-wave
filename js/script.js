@@ -74,7 +74,7 @@ btnMore.addEventListener('click',
     podcastsMore.classList.add('podcasts__more-hidden');
   });
 
-// -------- -------- --------
+// -------- Choices --------
 let element = document.querySelector('.broadcast__select');
 let choices = new Choices(element, {
   classNames: {
@@ -82,6 +82,7 @@ let choices = new Choices(element, {
   },
   itemSelectText: '',
   searchEnabled: false,
+  allowHTML: true,
 });
 
 // !-------- Accordion --------
