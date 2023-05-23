@@ -1459,7 +1459,7 @@ input[type="search"]::-webkit-search-results-decoration {
   -ms-flex-align: start;
   align-items: flex-start;
   max-width: 24%;
-  background-image: url(../img/Broadcast-mic.svg);
+  background-image: url(../img/broadcast-mic.svg);
   background-repeat: no-repeat;
   background-size: 65px 93px;
 }
