@@ -319,7 +319,7 @@
     padding-top: 168px;
     padding-left: calc((100vw - 540px) / 2);
     top: 0;
-    left: 0;
+    left: -100%;
     bottom: 0;
     right: 0;
     width: 100%;
@@ -331,23 +331,13 @@
     background: url(../img/Burger-Vector1.svg) 398px 146px no-repeat,
       url(../img/Burger-Vector2.svg) 541px 61px no-repeat,
       var(--color-text-lightgray);
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: visibility 0.3s ease-in-out,
-      -webkit-transform 0.3s ease-in-out;
-    transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
-      -webkit-transform 0.3s ease-in-out;
   }
 
   .header__nav--active {
     visibility: visible;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
     -webkit-transition: visibility 0.3s ease-in-out,
       -webkit-transform 0.3s ease-in-out;
     transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
@@ -658,7 +648,7 @@
     padding-top: 309px;
     padding-left: calc((100vw - 256px) / 2);
     bottom: 0;
-    left: 0;
+    left: -100%;
     right: 0;
     top: 0;
     height: 100vh;
@@ -667,23 +657,13 @@
     background-color: var(--color-white);
     overflow-y: auto;
     visibility: hidden;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: visibility 0.3s ease-in-out,
-      -webkit-transform 0.3s ease-in-out;
-    transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
-      -webkit-transform 0.3s ease-in-out;
   }
 
   .header__menu--active {
     visibility: visible;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
     -webkit-transition: visibility 0.3s ease-in-out,
       -webkit-transform 0.3s ease-in-out;
     transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
@@ -773,11 +753,12 @@
     padding: 0;
     padding-left: calc((100vw - 256px) / 2);
     top: 149px;
-    left: 0;
+    left: -100%;
     right: 0;
     width: 100%;
     z-index: 0;
     background-color: var(--color-white);
+    visibility: hidden;
   }
 
   .live__item {
@@ -871,25 +852,11 @@
     display: block;
   }
 
-  .header__live {
-    visibility: hidden;
-    -webkit-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    transform: translateX(-100px);
-    -webkit-transition: visibility 0.3s ease-in-out,
-      -webkit-transform 0.3s ease-in-out;
-    transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -o-transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
-    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
-    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out,
-      -webkit-transform 0.3s ease-in-out;
-  }
-
   .header__live--active {
     visibility: visible;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
     -webkit-transition: visibility 0.3s ease-in-out,
       -webkit-transform 0.3s ease-in-out;
     transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
