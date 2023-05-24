@@ -328,8 +328,8 @@
     z-index: 2;
     overflow-y: auto;
     visibility: hidden;
-    background: url(../img/Burger-Vector1.svg) 398px 146px no-repeat,
-      url(../img/Burger-Vector2.svg) 541px 61px no-repeat,
+    background: url(../img/burger-vector1.svg) 398px 146px no-repeat,
+      url(../img/burger-vector2.svg) 541px 61px no-repeat,
       var(--color-text-lightgray);
   }
 
